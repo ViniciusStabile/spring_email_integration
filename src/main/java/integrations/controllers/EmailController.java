@@ -16,7 +16,7 @@ public class EmailController {
 
 	@Autowired
 	private EmailService service;
-	
+
 	@PostMapping
 	public ResponseEntity<Void> send(@RequestBody EmailDTO dto) {
 		service.sendEmail(dto);
